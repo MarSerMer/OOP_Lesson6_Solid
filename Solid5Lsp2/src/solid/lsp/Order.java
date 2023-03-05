@@ -1,12 +1,8 @@
 package solid.lsp;
 
-public class Order {
-    private int price;
-    private int qnt;
-
+public class Order extends AbstractOrders{
     public Order(int qnt, int price) {
-        this.price = price;
-        this.qnt = qnt;
+        super(qnt,price);
     }
 
     public int getAmount() {
